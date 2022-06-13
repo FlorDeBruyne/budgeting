@@ -9,6 +9,16 @@ function PieChart(props){
     <React.Fragment>
       <div className="container-fluid mb-3">
         <h3 className="mt-3">Welcome to budgetChart</h3>
+        <form action="">
+          
+          <input type="radio"></input>
+          <label for="pieChart">pie chart</label> <br />
+          
+          <input type="radio"></input>
+          <label for="barChart">bar chart</label><br />
+        </form>
+        
+        
         <Chart 
         type="pie"
         width = {1349}
