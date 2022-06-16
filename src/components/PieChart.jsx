@@ -4,7 +4,7 @@ import  Chart  from "react-apexcharts";
 
 
 function PieChart(props){
-  const {title, series,  lables} = props
+  const {title, expense,  category} = props
   return (
     <React.Fragment>
       <div className="container-fluid mb-3">
@@ -17,6 +17,7 @@ function PieChart(props){
           <input type="radio"></input>
           <label for="barChart">bar chart</label><br />
         </form>
+
         
         
         <Chart 
@@ -24,19 +25,23 @@ function PieChart(props){
         width = {1349}
         height = {550}
   
-        series = {series}
+        series = {expense.map((value) => (value.amount))}
   
         options = { {
           
-          title: { text: title},
 
-          noData:{text : "Empty Data"},
+          dataLabels: {enabled: true},
+          
+          title: { text: title },
+
+          noData:{ text : "Empty Data" },
   
-          labels:[...lables],
+          labels: category.map((value) => value.name) ,
   
         } }>
   
         </Chart>
+        
   
       </div>
     </React.Fragment>
