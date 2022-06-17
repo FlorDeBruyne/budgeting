@@ -1,5 +1,4 @@
-// add type so you can switch between kind of chart
-// depending on what radius button is selected
+// add user, data
 
 const category = [
 	{
@@ -49,61 +48,71 @@ const expense = [
     id : 1,
     amount: 30,
     name: "Breakfast carrefour",
-    categoryId : 3 
+    categoryId : 3,
+    date: ""
   },
   {
     id : 2,
     amount: 20,
     name: "Drinking pub",
-    categoryId : 9
+    categoryId : 9,
+    date: ""
   },
   {
     id : 3,
     amount: 30,
     name: "Groceries Okay",
-    categoryId : 3
+    categoryId : 3,
+    date: ""
   },
   {
     id : 4,
     amount:10,
     name: "Train to Brugges and back",
-    categoryId : 2
+    categoryId : 2,
+    date: ""
   },
   {
     id : 5,
     amount: 50,
     name: "Hospital bill",
-    categoryId : 6
+    categoryId : 6,
+    date: ""
   },
   {
     id : 6,
     amount: 60,
     name: "Insurance payment",
-    categoryId :5
+    categoryId :5,
+    date: ""
   },
   {
     id : 7,
     amount: 70,
     name: "Vacation Paris",
-    categoryId : 8
+    categoryId : 8,
+    date: ""
   },
   {
     id : 8,
     amount: 80,
     name: "Weekend trip",
-    categoryId : 8
+    categoryId : 8,
+    date: ""
   },
   {
     id : 9,
     amount: 90,
     name: "New Phone",
-    categoryId : 8
+    categoryId : 8,
+    date: ""
   },
   {
     id : 10,
     amount: 100,
     name: "",
-    categoryId :10
+    categoryId :10,
+    date: ""
   },
 
 ]

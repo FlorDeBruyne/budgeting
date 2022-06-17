@@ -1,7 +1,7 @@
 function DTable(props){
 
 const {expense, category} = props
-let FORMULE = category.map((value) => (value.name)).filter((itemC) => (expense.categoryId === itemC.id))
+let FORMULE = category.filter((itemC) => (itemC.id === expense.categoryId)).map((value) => value.name)
   return (
     <div>
       <table className="table border border-sky-500">
@@ -15,7 +15,7 @@ let FORMULE = category.map((value) => (value.name)).filter((itemC) => (expense.c
           return(<tr className=" border border-sky-500">
           <td className=" border border-sky-500">{item.name}</td>
           <td className=" border border-sky-500">{item.amount}</td>
-          <td className=" border border-sky-500">{category.map((value) => (value.name)).filter((itemC) => (item.categoryId == itemC.id))}</td>
+          <td className=" border border-sky-500">{[category.filter((itemC) => (itemC.id === expense.categoryId)).map((value) => value.name)]}</td>
         </tr>)
         })}
         {FORMULE}

@@ -1,6 +1,6 @@
 import "./App.css";
 import Transaction from "./components/Transaction";
-import TRANSACTION_DATA from "./mock-Data/transactionData";
+// import TRANSACTION_DATA from "./mock-Data/transactionData";
 import PieChart from "./components/PieChart";
 import CHART_DATA from "./mock-Data/chartData";
 import Header from "./components/common/header";
@@ -10,8 +10,8 @@ function App() {
 		<div>
 			<Header />
 
-			{TRANSACTION_DATA.map((transaction) => (
-				<Transaction {...transaction.Transaction_Key} {...transaction} />
+			{CHART_DATA.map((data) => (
+				<Transaction {...data} />
 			))}
 
 			{CHART_DATA.map((chart) => (
