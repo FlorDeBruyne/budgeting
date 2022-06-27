@@ -3,26 +3,28 @@ import Transaction from "./components/Transaction";
 // import TRANSACTION_DATA from "./mock-Data/transactionData";
 import PieChart from "./components/PieChart";
 import CHART_DATA from "./mock-Data/chartData";
-import Header from "./components/common/header";
+
 import DTable from "./components/common/Table";
+
+import Header from "./components/common/header";
+
+import { Outlet } from "react-router-dom";
+
 function App() {
 	return (
 		<div>
+			{/* <Route exact path='/' component={Home} /> */}
 			<Header />
 
-			{CHART_DATA.map((data) => (
-				<Transaction {...data} />
-			))}
+			
 
-			{CHART_DATA.map((chart) => (
-				<PieChart {...chart} />
-			))}
-
-			{CHART_DATA.map((fin) => (
-				<DTable {...fin} />
-			))}
+			<Outlet />
 		</div>
 	);
 }
 
 export default App;
+
+
+
+

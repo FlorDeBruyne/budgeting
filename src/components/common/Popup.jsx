@@ -7,9 +7,7 @@ function Popup(props){
   const handleClick = () =>{
     setClose(!close)
   }
-  
-
-
+ 
   return (props.trigger !== close) ? (
     <div className="p-2 center top-0 left-0 w-100px h-100px bg-slate-700 justify-center items-center container mx-auto">
       <div className="relative p-32 w-250 h-250 max-w-640 bg-white">
